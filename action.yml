@@ -141,7 +141,7 @@ runs:
                     "_disableNextArticle": true
                 },
                 "fileMetadata": {
-                    "_disableContribution": true
+                    "_disableContribution": {"manual/**/*.md": true}
                 },
                 "globalMetadataFiles": [
                 ],
