@@ -1,6 +1,6 @@
 name: docfx-unitypackage
 description: DocFX Unity package is a GitHub action for deploying a DocFX website for Unity packages to GitHub Pages.
-author: adrianqm
+author: Casey Hofland
 branding:
   icon: 'file-text'
   color: 'white'
