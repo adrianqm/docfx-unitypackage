@@ -137,9 +137,12 @@ runs:
                     "_disableNextArticle": true
                 },
                 "fileMetadata": {
-                    "_disableContribution": {"manual/**/*.md": true}
+                    "_disableContribution": {"manual/**/*.md": true},
+                    "_disableNewTab": true
                 },
                 "globalMetadataFiles": [
+                    "_disableContribution": true,
+                    "_disableNewTab": true
                 ],
                 "content": [
                     {"files": ["index.md", "toc.yml"]},
