@@ -153,8 +153,7 @@ runs:
                 "sitemap": {"baseUrl": "'$url'"},
                 "xref": ["'$url'"],
                 "xrefService": ["https://xref.docs.microsoft.com/query?uid={uid}"],
-                "dest": "../_site",
-                "disableGitFeatures": true
+                "dest": "../_site"
             }
         }' > Documentation~/docfx.json
 
