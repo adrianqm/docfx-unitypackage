@@ -124,7 +124,8 @@ runs:
                 "src": [{"src": "..", "files": ["**/*.cs"]}],
                 "dest": "api",
                 "globalNamespaceId": "Global",
-                "allowCompilationErrors": true
+                "allowCompilationErrors": true,
+                "disableGitFeatures": true
             }],
             "build": {
                 "globalMetadata": {
@@ -153,7 +154,9 @@ runs:
                 "sitemap": {"baseUrl": "'$url'"},
                 "xref": ["'$url'"],
                 "xrefService": ["https://xref.docs.microsoft.com/query?uid={uid}"],
-                "dest": "../_site"
+                "dest": "../_site",
+                "cleanupCacheHistory": false,
+                "disableGitFeatures": true
             }
         }' > Documentation~/docfx.json
 
