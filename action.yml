@@ -18,19 +18,15 @@ runs:
       shell: bash
       run: |
         if [ -d Documentation~ ] && [ "$(ls -A Documentation~)" ]; then
+          # Eliminar archivos .pdb si existen
+          find Documentation~/ -type f -name "*.pdb" -delete
+
           mv -v Documentation~/ manual/
           mkdir -p Documentation~
           mv -v manual/ Documentation~/manual/
         else
           mkdir -p Documentation~/manual
         fi
-    
-    # Eliminar archivos .pdb del directorio temporal si existen
-    - name: Clean up temporary directory
-      shell: bash
-      run: |
-        # Eliminar archivos .pdb del directorio temporal si existen
-        rm -f Documentation~/manual/*.pdb
 
     # Generate pages, tables of contents, the docfx.json and anything the docfx needs.
 
@@ -132,8 +128,7 @@ runs:
                 "src": [{"src": "..", "files": ["**/*.cs"]}],
                 "dest": "api",
                 "globalNamespaceId": "Global",
-                "allowCompilationErrors": true,
-                "disableGitFeatures": true
+                "allowCompilationErrors": true
             }],
             "build": {
                 "globalMetadata": {
