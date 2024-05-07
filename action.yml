@@ -141,8 +141,6 @@ runs:
                     "_disableContribution": {"manual/**/*.md": true}
                 },
                 "globalMetadataFiles": [
-                    "_disableContribution": true,
-                    "_disableNewTab": true
                 ],
                 "content": [
                     {"files": ["index.md", "toc.yml"]},
