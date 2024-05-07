@@ -124,8 +124,7 @@ runs:
                 "src": [{"src": "..", "files": ["**/*.cs"]}],
                 "dest": "api",
                 "globalNamespaceId": "Global",
-                "allowCompilationErrors": true,
-                "disableGitFeatures": true
+                "allowCompilationErrors": true
             }],
             "build": {
                 "globalMetadata": {
