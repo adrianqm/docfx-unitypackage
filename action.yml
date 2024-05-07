@@ -154,7 +154,7 @@ runs:
                 "xref": ["'$url'"],
                 "xrefService": ["https://xref.docs.microsoft.com/query?uid={uid}"],
                 "dest": "../_site",
-                "keepFileLink": false
+                "disableGitFeatures": true
             }
         }' > Documentation~/docfx.json
 
