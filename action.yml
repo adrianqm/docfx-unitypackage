@@ -12,12 +12,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    # Eliminar archivos .pdb del directorio temporal si existen
-    - name: Clean up temporary directory
-      shell: bash
-      run: |
-        # Eliminar archivos .pdb del directorio temporal si existen
-        rm -f Documentation~/*.pdb
     
     # This step needs to happen before anything else!
     - name: Move everything inside the manual/ folder.
@@ -30,6 +24,13 @@ runs:
         else
           mkdir -p Documentation~/manual
         fi
+    
+    # Eliminar archivos .pdb del directorio temporal si existen
+    - name: Clean up temporary directory
+      shell: bash
+      run: |
+        # Eliminar archivos .pdb del directorio temporal si existen
+        rm -f Documentation~/manual/*.pdb
 
     # Generate pages, tables of contents, the docfx.json and anything the docfx needs.
 
