@@ -137,7 +137,7 @@ runs:
                     "_disableNextArticle": true
                 },
                 "fileMetadata": {
-                    "_disableContribution": {"manual/**/*.md": false}
+                    "_disableContribution": {"manual/**/*.md": true}
                 },
                 "globalMetadataFiles": [
                 ],
@@ -153,7 +153,8 @@ runs:
                 "sitemap": {"baseUrl": "'$url'"},
                 "xref": ["'$url'"],
                 "xrefService": ["https://xref.docs.microsoft.com/query?uid={uid}"],
-                "dest": "../_site"
+                "dest": "../_site",
+                "keepFileLink": false
             }
         }' > Documentation~/docfx.json
 
