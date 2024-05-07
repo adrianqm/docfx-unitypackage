@@ -12,6 +12,13 @@ inputs:
 runs:
   using: "composite"
   steps:
+    # Eliminar archivos .pdb del directorio temporal si existen
+    - name: Clean up temporary directory
+      shell: bash
+      run: |
+        # Eliminar archivos .pdb del directorio temporal si existen
+        rm -f Documentation~/*.pdb
+    
     # This step needs to happen before anything else!
     - name: Move everything inside the manual/ folder.
       shell: bash
