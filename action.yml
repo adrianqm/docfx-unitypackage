@@ -125,7 +125,7 @@ runs:
                 "dest": "api",
                 "globalNamespaceId": "Global",
                 "allowCompilationErrors": true,
-                "disableGitFeatures": true,
+                "disableGitFeatures": true
             }],
             "build": {
                 "globalMetadata": {
