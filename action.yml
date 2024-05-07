@@ -140,11 +140,6 @@ runs:
                     "_disableContribution": {"manual/**/*.md": true}
                 },
                 "globalMetadataFiles": [
-                    "_enableSearch": true,
-                    "_enableNewTab": false,
-                    "_disableNewTab": true,
-                    "_disableContribution": true,
-                    "_disableNextArticle": true
                 ],
                 "content": [
                     {"files": ["index.md", "toc.yml"]},
